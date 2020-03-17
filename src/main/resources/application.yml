@@ -1,0 +1,34 @@
+telegram: 
+  bot:
+    name: covid19_es_info_bot
+    defaultMessage: No entiendo ese comando. Use uno de los disponibles (puede consultarlos pulsando en /ayuda)
+    
+    inicio: "Este bot está diseñado para ofrecer información oficial actualizada sobre el <b>COVID-19</b>. Si necesitas ayuda pídela a tu familia o vecinos. 
+      Colabora con la contención quedándote en casa estos días y recuerda ser solidario. Puedes ver los comandos del bot escribiendo o 
+      pulsando sobre /help"
+    recomendaciones: "<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_como_protegerse.jpg\">RECOMENDACIONES COVID-19 (Click aquí)</a></u></b>"
+    informacion: "<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_que_es.jpg\">¿Qué es el nuevo coronavirus SARS-CoV-2? (Click aquí)</a></u></b>
+							    \n<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_como_se_transmite.jpg\">¿Cómo se transmite el nuevo coronavirus? (Click aquí)</a></u></b> 
+							    \n<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_sintomas.jpg\">¿Cuáles son los sintomas del nuevo coronavirus? (Click aquí)</a></u></b> 
+							    \n<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_tratamiento.jpg\">¿Existe tratamiento para el nuevo coronavirus? (Click aquí)</a></u></b>
+							    \n<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_mascarillas.jpg\">¿Debo utilizar mascarilla para protegerme? (Click aquí)</a></u></b>"
+    telefonos: "<b><u><a href=\"https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/img/COVID19_que_hacer.jpg\">Información telefónica España (Click aquí)</a></u></b>"
+    ayuda: "Estos son los comandos disponibles:
+      \n/inicio- Información sobre el bot
+      \n/resumen_es- Resumen situación en España
+      \n/resumen_global- Resumen situación Mundial
+      \n/telefonos- Teléfonos de ayuda oficiales por comunidades <i>(España)</i>
+      \n/informacion- Información oficial importante sobre el <b>COVID-19</b>
+      \n/recomendaciones - Recomendaciones oficiales sobre el <b>COVID-19</b>
+      \n/ayuda- Ayuda del uso del bot"
+  api: 
+    token: 990485779:AAGOF-e6OqzoiisMSC3CPxpXIPJi3N_dwEE
+    url: https://api.telegram.org/bot
+covid.info.source: https://www.worldometers.info/coronavirus/
+
+logging:
+  level:
+    ROOT: ERROR
+    com.genaut.covid.tgbot.bot: DEBUG
+    com.genaut.covid.tgbot.services: DEBUG
+    
