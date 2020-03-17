@@ -70,8 +70,9 @@ public class COVIDInfo {
 			return 
 					"<pre>Información actual <b>España</b>: \n" +
 					String.format(HEADER_FORMAT, "Confirmados", "Fallecidos", "Recuperados") +
-					String.format(HEADER_FORMAT, spainInfo.getTotalConfirmed(), spainInfo.getTotalDeaths(), spainInfo.getTotalRecovered())
-					+"</pre>";	
+					String.format(HEADER_FORMAT, spainInfo.getTotalConfirmed(), spainInfo.getTotalDeaths(), spainInfo.getTotalRecovered()) +
+					"Fecha última actualización: " + updateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME).toString() + 
+					"</pre>";	
 		} else {
 			return "No hay información disponible por el momento";
 		}

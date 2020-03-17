@@ -15,7 +15,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import com.genaut.covid.tgbot.ext.Commands;
 import com.genaut.covid.tgbot.info.COVIDInfo;
 import com.genaut.covid.tgbot.services.InfoService;
-
+@Component
 public class CovidBot extends org.telegram.telegrambots.bots.TelegramLongPollingBot {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CovidBot.class);
