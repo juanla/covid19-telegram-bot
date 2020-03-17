@@ -22,7 +22,7 @@ telegram:
       \n/recomendaciones - Recomendaciones oficiales sobre el <b>COVID-19</b>
       \n/ayuda- Ayuda del uso del bot"
   api: 
-    token: 990485779:AAGOF-e6OqzoiisMSC3CPxpXIPJi3N_dwEE
+    token: <YOUR_TOKEN>
     url: https://api.telegram.org/bot
 covid.info.source: https://www.worldometers.info/coronavirus/
 
