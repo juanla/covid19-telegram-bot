@@ -56,6 +56,10 @@ public class CovidBot extends org.telegram.telegrambots.bots.TelegramLongPolling
 		
 		final COVIDInfo covidInfo = infoService.getUpdatedInfo();
 		
+		if(covidInfo == null || covidInfo.getInfoByCountryList().size() == 0) {
+			infoService.cleanCovidCache();
+		}
+		
 		if (update.hasMessage() && update.getMessage().hasText()) {
 			
 	        final Long chatId = update.getMessage().getChatId();

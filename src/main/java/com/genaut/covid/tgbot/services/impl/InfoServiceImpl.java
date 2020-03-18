@@ -76,7 +76,7 @@ public class InfoServiceImpl implements InfoService {
 		info.setTotalRecovered(Long.valueOf(mainData.get(2).text().replace(",", "")));
 		info.setUpdateTime(ZonedDateTime.now(ZoneId.of("Europe/Madrid")));
 		//Extrae las filas con la información de cada país
-		final Elements elementsByCountry = doc.select("#main_table_countries tr[style]");
+		final Elements elementsByCountry = doc.select("#main_table_countries_today tr[style]");
 		for(Element e : elementsByCountry) {
 			
 			//Obtenemos los datos: País, Contagios,Fallecimientos y Recuperados
